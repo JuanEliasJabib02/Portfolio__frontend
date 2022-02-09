@@ -2,7 +2,7 @@
 
 :root{
     
-    --purple:#8606ad;
+    --purple:#9304a9;
     --black:#000;
     --white:#fff;
     --border:.2rem solid var(var(--black));
@@ -74,6 +74,51 @@ body{
 }
 
 .header #menu-btn{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.7rem;
+    border-radius: 50%;
+    border:var(--border);
+    background: var(--white);
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.header #menu-btn:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+.navbar{
+    position:fixed;
+    bottom:0; left:0;
+    height: calc(100% - 8rem);
+    width: 50%;
+    z-index: 1000;
+    background:var(--black);
+    padding:0 9%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem
 
 }
+
+.navbar a{
+    font-size: 6rem;
+    color:var(--white);
+    text-transform: uppercase;
+    transition: .2s linear;
+
+}
+
+.navbar a:hover{
+    background:var(--white);
+    font-size:4rem;
+    color:var(--black);
+    transform: scale(.9);
+    padding: .5rem 2rem;
+}
+
 

@@ -123,11 +123,13 @@ body{
 
 .navbar-img img{
     height: 100%;
+    font-size: 10rem;
     width: 100%;
-    object-fit:scale-down;
-    object-position: top;
+    object-fit:cover;
+    object-position: right;
     display: flex;
-    filter:grayscale()
+    
+
 }
 
 

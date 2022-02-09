@@ -127,7 +127,8 @@ body{
     object-fit:scale-down;
     object-position: top;
     display: flex;
-    filter:grayscale()
+    filter:grayscale();
 }
+
 
 

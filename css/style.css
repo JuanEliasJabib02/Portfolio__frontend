@@ -75,6 +75,19 @@ section{
 .header .logo {
     font-size:  2.5rem;
     color: var(--black);
+    
+}
+
+.skills{
+    background-color: black
+}
+
+.heading{
+    text-align:center;
+    font-size: 7vw;
+    text-transform:uppercase;
+    color:var(--white);
+    -webkit-text-stroke: .2rem var(--gray);
 }
 
 .header #menu-btn{
@@ -166,6 +179,7 @@ section{
 .home{
     margin-top: 8rem;
     position: relative;
+    padding-bottom: 35rem;
 }
 
 .home h3{
@@ -203,11 +217,39 @@ section{
     transform: translate(-50%, -70%) scale(1);
 
 }
+
+.home .wave{
+    position: absolute;
+    bottom: 0; left:0;
+    height: 30rem;
+    width: 100%;
+    background:url(../images/wave.png) repeat-x;
+    background-size: 250rem 30rem;
+    animation: wave 10s linear infinite;
+
+}
+
+@keyframes wave {
+
+    0%{
+        background-position-x:0;
+    }
+    0%{
+        background-position-x:-250rem;
+    }
+}
  
+.home .wave.wave-2{
+    opacity: .5;
+    animation-delay: 0.2s;
+    animation-direction:reverse;
+}
 
+.home .wave.wave.wave-3{
+    opacity:.7;
+    animation-duration: 10s;
 
-
-
+}
 
 
 
@@ -258,6 +300,12 @@ section{
 }
 
 @media (max-width: 768px){
+
+
+    .heading{
+        font-size:10vw;
+        
+    }
     
    .navbar{
        width: 100%;
@@ -292,7 +340,7 @@ section{
    .home .home-text:hover ~ .home-img{
        height: 20rem;
        width:   20rem;
-       transform: translate(-50%, 100%) scale(0);
+       transform: translate(-50%, 100%) scale(1);
    }
     
 }

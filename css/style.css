@@ -91,7 +91,7 @@ body{
 
 .navbar{
     position:fixed;
-    bottom:0; left:0;
+    bottom:0; left: -110%;;
     height: calc(100% - 8rem);
     width: 50%;
     z-index: 1000;
@@ -120,6 +120,15 @@ body{
     transform: scale(.9);
     padding: .5rem 2rem;
 }
+
+.navbar-img{
+    position: fixed;
+    bottom:0; right:-110%;
+    height: calc(100% -8 rem);
+    width: 50%;
+    z-index: 1000;
+} 
+
 
 .navbar-img img{
     height: 100%;

@@ -312,9 +312,75 @@ section{
     font-size: 4vw;
     text-transform:none;
     text-shadow: #191102;
+    margin-bottom: 7rem;
+}
+
+.projects .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
 }
 
 
+.projects .box-container .box{
+    overflow:hidden;
+    position:relative;
+
+}
+
+.projects .box-container .box img{
+    height: 30rem;
+    width:100%;
+    object-fit: cover;
+    transition: .2s linear;
+    padding-bottom: 8rem;
+}
+
+.projects .box-container .box .content{
+    position: absolute;
+    bottom:0; left:0;
+    height:100%;
+    width:100%;
+    background:var(--white);
+    text-align: center;
+    padding:1rem 2rem;
+    text-align: center;
+    transition: .2s linear;
+    transform: translateY(calc(100% - 8.5rem))
+}
+
+.projects .box-container .box .content i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 5.7rem;
+    border-radius: 50%;
+    border:var(--border);
+    font-size:2rem;
+    margin-bottom: 1rem;
+
+}
+
+.projects .box-container .box .content h3{
+    font-size:2rem;
+
+}
+
+.projects .box-container .box .content p{
+    padding:1rem 0;
+    font-size:1.5rem;
+    line-height: 2;
+}
+
+.projects .box-container .box:hover img{
+    padding-bottom: 0;
+    /* height: 25rem; */
+
+}
+
+.projects .box-container .box:hover .content{
+    transform: translateY(0);
+    padding: 3rem 2rem;
+}
 
 
 

@@ -6,6 +6,8 @@
     --black:#191102;
     --white:#fff;
     --border:.2rem solid var(--black);
+    --borderTwo:.2rem solid var(--gray);
+    
     --box-shadow:0 1rem 1.5rem rgba(0,0,0,.3);
 
 }
@@ -250,6 +252,75 @@ section{
     animation-duration: 10s;
 
 }
+
+
+.skills h1{
+    text-align: center;
+    font-size: 4vw;
+    text-transform:none;
+    margin-bottom: 7rem;
+    text-shadow: #191102;
+    
+}
+
+
+.skills .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    
+}
+
+
+.skills .box-container .box{
+    padding:3rem 2rem;
+    border:var(--bordertwo);
+    background:none;
+    text-align:center;
+
+}
+
+
+.skills .box-container .box img{
+    height:13rem;
+    margin-bottom: 2rem;
+}
+
+
+.btn{
+    display: block;
+    margin-top: 1rem;
+    padding:1rem 3rem;
+    background:var(--gray);
+    border:var(--border);
+    color:black;
+    font-size:2rem;
+}
+
+.btn:hover{
+    background:black;
+    color:var(--white);
+}
+
+
+.projects{
+    background-color:black;
+}
+
+.projects h1{
+    text-align: center;
+    font-size: 4vw;
+    text-transform:none;
+    text-shadow: #191102;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-
-    --gray: #f333;
+    --gray: white;
     --black: #000;
     --white: #fff;
     --border: .2rem solid var(--black);
     --borderTwo: .2rem solid var(--gray);
-
     --box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .3);
-
 }
 
 * {
@@ -20,8 +17,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
-    cursor: none;
 }
 
 *:active>.cursor {
@@ -75,14 +70,24 @@ section {
     background: var(--gray);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
 }
 
 .header .logo {
     font-size: 2.5rem;
     color: var(--black);
 
+}
+
+.header__icon {
+    width: 5rem;
+    height: 5rem;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.header__gmail-icon:hover {
+    transform: scale(90%);
 }
 
 .skills {
@@ -190,7 +195,6 @@ section {
     margin-top: 8rem;
     position: relative;
     padding-bottom: 35rem;
-    border: 1rem solid red;
 }
 
 .home h3 {
@@ -199,9 +203,22 @@ section {
     text-transform: uppercase;
 }
 
+.blog {
+    color: #149414;
+    transition: all;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}
+
+.blog:hover {
+    transform: scale(90%);
+    font-size: 3.5rem;
+}
+
 .home h4 {
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .home .home-text {
@@ -248,7 +265,6 @@ section {
     background: url(../images/wave.png) repeat-x;
     background-size: 250rem 30rem;
     animation: wave 10s linear infinite;
-
 }
 
 @keyframes wave {
@@ -459,7 +475,7 @@ section {
     margin-bottom: 5rem;
 }
 
-.footer .share a {
+.contact .share a {
 
     height: 7rem;
     width: 7rem;
@@ -472,13 +488,13 @@ section {
 
 }
 
-.footer .share a:hover {
+.contact .share a:hover {
     background-color: var(--black);
     color: var(--white);
 
 }
 
-.footer .link {
+.contact .link {
     margin: 1rem 0;
     display: flex;
     justify-content: center;

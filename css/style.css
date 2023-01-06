@@ -319,7 +319,7 @@ section {
 
 
 .skills .box-container .box img {
-    height: 13rem;
+    height: 10rem;
     margin-bottom: 2rem;
 }
 
@@ -398,6 +398,17 @@ section {
 
 }
 
+.projects .box-container .box .content .project_eyes {
+    height: 6rem;
+    width: 6rem;
+    line-height: 5.7rem;
+    border-radius: 50%;
+    border: var(--border);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
 .projects .box-container .box .content h3 {
     font-size: 2rem;
 
@@ -420,60 +431,6 @@ section {
     padding: 3rem 2rem;
 }
 
-
-.contact {
-    background: linear-gradient(var(--black) 50%, var(--gray) 50.1%);
-}
-
-
-.contact form {
-    max-width: 70rem;
-    margin: 0 auto;
-    background-color: var(--white);
-    border: var(--border);
-    padding: 2rem;
-}
-
-.contact form .box {
-    width: 100%;
-    margin: .7rem 0;
-    padding: 1.2rem 1.4rem;
-    text-transform: none;
-    font-size: 2rem;
-    border: var(--border);
-
-}
-
-.contact form .box:focus {
-    background-color: var(--black);
-    color: var(--white);
-
-}
-
-.contact form .box::placeholder {
-    color: var(--black);
-    text-transform: capitalize;
-}
-
-
-.contact form .box:focus::placeholder {
-    color: var(--white);
-}
-
-.contact form textarea {
-    height: 20rem;
-    resize: none;
-
-}
-
-
-.footer {
-    text-align: center;
-}
-
-.footer .share {
-    margin-bottom: 5rem;
-}
 
 .contact .share a {
 

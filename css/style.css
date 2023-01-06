@@ -2,7 +2,7 @@
 
 :root {
 
-    --gray: #545677;
+    --gray: #f333;
     --black: #000;
     --white: #fff;
     --border: .2rem solid var(--black);
@@ -190,12 +190,18 @@ section {
     margin-top: 8rem;
     position: relative;
     padding-bottom: 35rem;
+    border: 1rem solid red;
 }
 
 .home h3 {
     text-align: center;
     font-size: 6vw;
     text-transform: uppercase;
+}
+
+.home h4 {
+    text-align: center;
+    font-size: 3vw;
 }
 
 .home .home-text {
@@ -212,9 +218,13 @@ section {
     transform: translate(-50%, -70%) scale(0);
     transition: .2s linear;
     pointer-events: none;
-    height: 40rem;
-    width: 40rem;
+    height: 30rem;
+    width: 30rem;
     object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 20;
 
 }
 

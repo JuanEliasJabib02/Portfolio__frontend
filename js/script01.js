@@ -18,8 +18,6 @@ document.querySelector('.home').onmousemove = (e) => {
 };
 
 
-
-
 document.querySelectorAll('.navbar a').forEach(link => {
     link.onmouseenter = () => {
         document.querySelector('.navbar-img img').src = link.getAttribute('data-src');

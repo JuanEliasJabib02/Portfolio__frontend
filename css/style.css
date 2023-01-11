@@ -50,7 +50,7 @@ section {
     padding: 5rem 10%;
 }
 
-.cursor {
+/* .cursor {
     position: absolute;
     height: 5rem;
     pointer-events: none;
@@ -58,7 +58,7 @@ section {
     left: -5rem;
     transform: translateX(-40%);
     z-index: 10000;
-}
+} */
 
 .header {
     padding: 1.5rem 10%;
@@ -83,11 +83,13 @@ section {
     width: 5rem;
     height: 5rem;
     transition: all;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
-.header__gmail-icon:hover {
+.header__icon:hover {
     transform: scale(90%);
+
 }
 
 .skills {
@@ -303,7 +305,7 @@ section {
 
 .skills .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
 
 }
@@ -319,7 +321,7 @@ section {
 
 
 .skills .box-container .box img {
-    height: 10rem;
+    height: 7rem;
     margin-bottom: 2rem;
 }
 
@@ -385,28 +387,6 @@ section {
     text-align: center;
     transition: .2s linear;
     transform: translateY(calc(100% - 8.5rem))
-}
-
-.projects .box-container .box .content i {
-    height: 6rem;
-    width: 6rem;
-    line-height: 5.7rem;
-    border-radius: 50%;
-    border: var(--border);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-
-}
-
-.projects .box-container .box .content .project_eyes {
-    height: 6rem;
-    width: 6rem;
-    line-height: 5.7rem;
-    border-radius: 50%;
-    border: var(--border);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-
 }
 
 .projects .box-container .box .content h3 {
